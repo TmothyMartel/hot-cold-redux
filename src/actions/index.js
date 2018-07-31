@@ -1,4 +1,3 @@
-//set winning number
 // makeAGuess
 // restart
 //
@@ -9,16 +8,13 @@ export const makeGuess = guess => ({
 	guess
 });
 
-export const RESTART_GAME = 'RESTART_GAME';
-export const restartGame = restart => ({
+export const RESTART_GAME = "RESTART_GAME";
+export const restartGame = reset => ({
 	type: RESTART_GAME,
-	restart
+	reset
 });
 
-export const GENERATE_AURAL_UPDATE = 'GENERATE_AURAL_UPDATE';
-export const generateAuralUpdate = update => ({
-	type: GENERATE_AURAL_UPDATE,
-	update
+export const GENERATE_AURAL_UPDATE = "GENERATE_AURAL_UPDATE";
+export const generateAuralUpdate = () => ({
+	type: GENERATE_AURAL_UPDATE
 });
-
-
