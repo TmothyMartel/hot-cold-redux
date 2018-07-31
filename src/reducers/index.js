@@ -73,9 +73,15 @@ const initialState = {
 
 
 export const gameReducer = (state = initialState, action) => {
-	return state;
-	console.log(state);
-	console.log(action);
-};
+	if (action === action.RESTART_GAME) {
+		state = ({
+			guesses: [],
+			feedback: 'Make your guess!',
+			auralStatus: '',
+			correctAnswer: Math.floor(Math.random() * 100) + 1
+		});
+	} else {
+		return state;
+	}
 
-
+}
