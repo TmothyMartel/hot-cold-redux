@@ -9,8 +9,16 @@ export const makeGuess = guess => ({
 	guess
 });
 
-export const GIVE_FEEDBACK = "GIVE_FEEDBACK";
-export const giveFeedback = feedback => ({
-	type: GIVE_FEEDBACK,
-	feedback
+export const RESTART_GAME = 'RESTART_GAME';
+export const restartGame = restart => ({
+	type: RESTART_GAME,
+	restart
 });
+
+export const GENERATE_AURAL_UPDATE = 'GENERATE_AURAL_UPDATE';
+export const generateAuralUpdate = update => ({
+	type: GENERATE_AURAL_UPDATE,
+	update
+});
+
+
